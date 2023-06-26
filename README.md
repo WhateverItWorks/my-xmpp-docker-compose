@@ -11,7 +11,7 @@ Documentation for Tigase XMPP Server is available at https://docs.tigase.net.
 
 Available from [DockerHub](https://hub.docker.com/r/tigase/tigase-xmpp-server)
 
-![Tigase logo](docs/logo.png)
+![Tigase logo](logo.png)
 
 ### Deploy with Docker
 
