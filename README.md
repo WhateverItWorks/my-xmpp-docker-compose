@@ -66,7 +66,7 @@ docker logs xmpp
 
 4. ```git clone https://github.com/WhateverItWorks/my-xmpp-docker-compose.git xmpp```
 
-5. ```nano docker-compose.yml
+5. ```nano docker-compose.yml```
 
 6. ```docker-compose up -d```
 
