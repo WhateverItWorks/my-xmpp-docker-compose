@@ -1,55 +1,5 @@
-Tigase's Docker package for the Tigase XMPP Server.
-
-[![](https://images.microbadger.com/badges/version/tigase/tigase-xmpp-server:8.1.0.svg)](https://microbadger.com/images/tigase/tigase-xmpp-server:8.1.0 "Get your own version badge on microbadger.com")
-![Docker Pulls](https://img.shields.io/docker/pulls/tigase/tigase-xmpp-server)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/tigase/tigase-xmpp-server/8.1.0)
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [Supported tags and respective `Dockerfile`s](#supported-tags-and-respective-dockerfiles)
-  - [Simple tags](#simple-tags)
-- [What is Tigase XMPP server?](#what-is-tigase-xmpp-server)
-- [How to use this image?](#how-to-use-this-image)
-  - [Starting Tigase XMPP Server](#starting-tigase-xmpp-server)
-  - [Configuration](#configuration)
-    - [Setting hostname](#setting-hostname)
-      - [Dedicated network](#dedicated-network)
-    - [Exposing ports](#exposing-ports)
-    - [Connecting to external database](#connecting-to-external-database)
-    - [Automatically creating Admin user](#automatically-creating-admin-user)
-    - [Exported volumes](#exported-volumes)
-    - [Tweaking memory configuration](#tweaking-memory-configuration)
-    - [Operating system settings](#operating-system-settings)
-      - [Number of opened files](#number-of-opened-files)
-      - [TCP network settings](#tcp-network-settings)
-  - [Complete Run Examples](#complete-run-examples)
-    - [Single, basic instance](#single-basic-instance)
-    - [Cluster with mysql](#cluster-with-mysql)
-- [Building & Publishing](#building--publishing)
-  - [Publishing](#publishing)
-  - [Tagging nightlies](#tagging-nightlies)
-- [License](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Supported tags and respective `Dockerfile`s
-
-## Simple tags
--   [`nightly` (*nightly/Dockerfile*)](nightly/Dockerfile)
--   [`nightly-enterprise` (*nightly/Dockerfile*)](nightly/Dockerfile)
--   [`8.2.1`, `latest` (*8.2.1/Dockerfile*)](8.2.1/Dockerfile)
--   [`8.2.1-enterprise`, `latest-enterprise` (*8.2.1/Dockerfile*)](8.2.1/Dockerfile)
--   [`8.2.0` (*8.2.0/Dockerfile*)](8.2.0/Dockerfile)
--   [`8.2.0-enterprise` (*8.2.0/Dockerfile*)](8.2.0/Dockerfile)
--   [`8.1.2` (*8.1.2/Dockerfile*)](8.1.2/Dockerfile)
--   [`8.1.1` (*8.1.1/Dockerfile*)](8.1.1/Dockerfile)
--   [`8.1.0` (*8.1.0/Dockerfile*)](8.1.0/Dockerfile)
--   [`8.0.0` (*8.0.0/Dockerfile*)](8.0.0/Dockerfile)
--   [`8.0.0-jre8` (*8.0.0/jre-8/Dockerfile*)](8.0.0/jre-8/Dockerfile)
-
-> **_NOTE:_** `enterprise` flavours containin commercial components
+### my-xmpp-docker-compose
+Tigase XMPP Server was never easier - you can have a full-fledged XMPP server in a matter of minutes.
 
 # What is Tigase XMPP server?
 
