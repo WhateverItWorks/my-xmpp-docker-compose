@@ -1,5 +1,5 @@
 ### my-xmpp-docker-compose
-Tigase XMPP Server was never easier - you can have a full-fledged XMPP server in a matter of minutes.
+Tigase XMPP Server can have a full-fledged XMPP server in Docker in a matter of minutes.
 
 # What is Tigase XMPP server?
 
@@ -13,20 +13,26 @@ Available from [DockerHub](https://hub.docker.com/r/tigase/tigase-xmpp-server)
 
 ![Tigase logo](docs/logo.png)
 
-# How to use this image?
+### Deploy with Docker
 
-## Starting Tigase XMPP Server
-
-Starting Tigase XMPP Server is very simple:
-
-```bash
-$ docker pull tigase/tigase-xmpp-server
-$ docker run --name tigase-server -p 8080:8080 -p 5222:5222 tigase/tigase-xmpp-server:tag
+```
+docker pull tigase/tigase-xmpp-server:latest
+docker run --name tigase-server -p 8080:8080 -p 5222:5222 tigase/tigase-xmpp-server:latest
 ```
 
-where `tigase-server` is name of the container that will be created and `tag` is the tag specifying version of Tigase XMPP Server to run (if `tag` is not specified then `latest` will be used)
+### Deploy with Docker-Compose
 
-If Tigase XMPP Server is started for the first time (without any configuration), it will start web-based setup at port 8080.
+```
+docker-compose down
+docker-compose pull
+docker-compose up -d
+```
+
+### View Logs
+
+```
+docker logs xmpp
+```
 
 ## Configuration
 
