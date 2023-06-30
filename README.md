@@ -21,8 +21,7 @@ https://github.com/WhateverItWorks/Watchtower
 ### Deploy with Docker
 
 ```
-docker pull tigase/tigase-xmpp-server:latest
-docker run --name tigase-server -p 8080:8080 -p 5222:5222 tigase/tigase-xmpp-server:latest
+docker-compose up -d
 ```
 
 ### Deploy with Docker-Compose
