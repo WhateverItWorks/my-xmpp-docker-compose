@@ -6,6 +6,43 @@ services:
         hostname: xmpp
         image: tigase/tigase-xmpp-server:latest
         restart: always
+        depends_on:
+            - db
+        environment:
+            - DB_PORT=3306
+            - DB_HOST=xmpp
+            - DB_ROOT_PASS=changethis
+            - DB_ROOT_USER=xmpp
+            - ADMIN_PASSWORD=changethis
+            - ADMIN_JID=changethis
+            #- PRODUCTION_HEAP_SETTINGS=-XX:MaxRAMPercentage=90
+            #- ulimit nofile=350000:350000
+            #- VHOST
+            #- CNAME
         ports:
             - '5222:5222'
             - '8080:8080'
+        #ports:
+           #- "8080:8080"
+           #- "5222:5222"
+           #- "5223:5223"
+           #- "5269:5269"
+           #- "5270:5270"
+           #- "5277:5277"
+           #- "5280:5280"
+           #- "5281:5281"
+           #- "5290:5290"
+           #- "5291:5291"
+           #- "9050:9050"
+        volumes:
+            - ./xmpp/etc:/home/tigase/tigase-server/etc   
+            - ./xmpp/certs:/home/tigase/tigase-server/certs
+            - ./xmpp/logs:/home/tigase/tigase-server/logs
+            - ./xmpp/data:/home/tigase/tigase-server/data
+            - ./xmpp/db:/home/tigase/tigase-server/tigasedb
+db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: xmpp
+      POSTGRES_PASSWORD: changethis
