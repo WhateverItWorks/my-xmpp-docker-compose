@@ -40,10 +40,15 @@ docker-compose down
 docker-compose up -d --build
 ```
 
-### Deploy Manually
+### Deploy Prosody Manually
 
 - [Setup Prosody XMPP Server on Ubuntu 22.04](https://www.linuxbabe.com/ubuntu/prosody-xmpp-server-ubuntu-22-04)
 - [Setup Prosody XMPP Server on Ubuntu 20.04](https://www.linuxbabe.com/ubuntu/install-configure-prosody-xmpp-server-ubuntu-20-04)
+
+### Deploy Prosody with Docker
+```
+https://prosody.im/doc/docker
+```
 
 ### View Logs
 
