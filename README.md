@@ -71,6 +71,11 @@ docker logs xmpp
 
 - [Download a XMPP Client](https://xmpp.org/getting-started/)
 
+### XMPP Web
+```
+https://github.com/nioc/xmpp-web
+```
+
 ## Security Audits:
 
 - [Internet.nl](https://internet.nl/site/element.whateveritworks.org/2060148/)
