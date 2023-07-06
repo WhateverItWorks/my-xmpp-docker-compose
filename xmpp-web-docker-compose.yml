@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  xmpp-web:
+    container_name: xmpp-web
+    hostname: xmpp-web
+    restart: always
+    image: nioc/xmpp-web:latest
+    ports:
+      - "127.0.0.1:1234:80"
+    environment: 
+      #- APP_NAME=changethis
+      #- APP_REGISTERED_ACCESS=true
+      #- APP_GUEST_ACCESS=false
+      #- XMPP_ANON_HOST=null
+      #- APP_IS_TRANSPORTS_USER_ALLOWED=false
+      #- APP_HTTP_AUTODISCOVERY=true
+      #- APP_RESOURCE=changethis
+      #- APP_DEFAULT_MUC=null
+      #- APP_IS_STYLING_DISABLED=true
+      #- APP_HAS_SENDING_ENTER_KEY=true
+      #- XMPP_CONNECT_TIMEOUT=5000
+      #- APP_PINNED_MUCS=[]
+      #- APP_LOGO_URL=''
+      #- APP_GUEST_DESCRIPTION=
+      - XMPP_WS=changethis
+      - APP_DEFAULT_DOMAIN=changethis
