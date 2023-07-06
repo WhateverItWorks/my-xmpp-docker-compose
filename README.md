@@ -18,18 +18,26 @@ Available from [DockerHub](https://hub.docker.com/r/tigase/tigase-xmpp-server)
 https://github.com/WhateverItWorks/Watchtower
 ```
 
+### €⁠20 [Hetzner Cloud](https://hetzner.cloud/?ref=eLtKhFK70n4h)
+
 ### Deploy with Docker
 
 ```
-docker-compose up -d
-```
-
-### Deploy with Docker-Compose
-
-```
+apt install git
+git clone https://github.com/WhateverItWorks/my-xmpp-docker-compose.git xmpp
+cd xmpp
+nano docker-compose.yml
 docker-compose down
 docker-compose pull
 docker-compose up -d
+```
+http://localhost:8080
+
+
+### Deploy with Dockerfile
+```
+docker-compose down
+docker-compose up -d --build
 ```
 
 ### Deploy Manually
@@ -42,39 +50,6 @@ docker-compose up -d
 ```
 docker logs xmpp
 ```
-
-## Security Audits:
-
-- [Internet.nl](https://internet.nl/site/element.whateveritworks.org/2060148/)
-- [HSTS Preload](https://hstspreload.org/)
-- [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=element.whateveritworks.org)
-- [Security Headers](https://securityheaders.com/?q=element.whateveritworks.org&hide=on&followRedirects=on)
-- [pagespeed](https://pagespeed.web.dev/)
-- [webbkoll](https://webbkoll.dataskydd.net/en)
-- [ImmuniWeb](https://www.immuniweb.com/ssl/element.whateveritworks.org)
-- [Hardenize](https://www.hardenize.com/report/element.whateveritworks.org/1686343966)
-- [Mozilla.org](https://observatory.mozilla.org/)
-- [report-uri.com](https://report-uri.com/home/tools)
-- [check-your-website.server-daten.de](https://check-your-website.server-daten.de/?q=element.whateveritworks.org)
-- [csp-evaluator.withgoogle.com](https://csp-evaluator.withgoogle.com/)
-- [OpenWPM](https://github.com/openwpm/OpenWPM)
-- [privacyscore.org](https://privacyscore.org)
-
-## Usage:
-
-1. Buy [Hetzner.com](https://hetzner.com) it's 100% renewal hardware and you get affordable dedicated servers, and you also help save the world.
-
-2. Get [Cloudflare](https://cloudflare.com) it's carbon renewal and you help save the world.
-
-3. ```apt install git```
-
-4. ```git clone https://github.com/WhateverItWorks/my-xmpp-docker-compose.git xmpp```
-
-5. ```nano docker-compose.yml```
-
-6. ```docker-compose up -d```
-
-```http://localhost:8080```
 
 ### XMPP Server Hardening
 
@@ -92,6 +67,22 @@ docker logs xmpp
 
 - [Download a XMPP Client](https://xmpp.org/getting-started/)
 
+## Security Audits:
+
+- [Internet.nl](https://internet.nl/site/element.whateveritworks.org/2060148/)
+- [HSTS Preload](https://hstspreload.org/)
+- [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=element.whateveritworks.org)
+- [Security Headers](https://securityheaders.com/?q=element.whateveritworks.org&hide=on&followRedirects=on)
+- [pagespeed](https://pagespeed.web.dev/)
+- [webbkoll](https://webbkoll.dataskydd.net/en)
+- [ImmuniWeb](https://www.immuniweb.com/ssl/element.whateveritworks.org)
+- [Hardenize](https://www.hardenize.com/report/element.whateveritworks.org/1686343966)
+- [Mozilla.org](https://observatory.mozilla.org/)
+- [report-uri.com](https://report-uri.com/home/tools)
+- [check-your-website.server-daten.de](https://check-your-website.server-daten.de/?q=element.whateveritworks.org)
+- [csp-evaluator.withgoogle.com](https://csp-evaluator.withgoogle.com/)
+- [OpenWPM](https://github.com/openwpm/OpenWPM)
+- [privacyscore.org](https://privacyscore.org)
 
 ## Configuration
 
