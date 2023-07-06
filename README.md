@@ -50,6 +50,11 @@ docker-compose up -d --build
 https://prosody.im/doc/docker
 ```
 
+### Deploy Prosody on Raspbery Pi
+```
+https://hub.docker.com/r/tobi312/prosody
+```
+
 ### View Logs
 
 ```
