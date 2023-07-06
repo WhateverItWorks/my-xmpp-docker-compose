@@ -61,7 +61,6 @@ docker logs xmpp
 - [Connection Checker](https://connect.xmpp.net/)
 - [Observatory.mozilla.org](https://observatory.mozilla.org/)
 - [CryptCheck](https://cryptcheck.fr/)
-- [tls.imirhil.fr](https://tls.imirhil.fr/)
 
 ### XMPP Cross Platform
 
